@@ -10,9 +10,7 @@
     )
 )
 
-(defun is_open (c)
-    (not (eq NIL (member c '("(" "{" "[") :test #'string=)))
-)
+(defun is_open (c) (member c '("(" "{" "[") :test #'string=))
 
 (defun is_pair (a b)
     (cond
